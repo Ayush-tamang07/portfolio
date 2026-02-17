@@ -1,0 +1,20 @@
+<!-- <section> -->
+  <!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">ayush@root:~$ ls works/</h1> -->
+  <!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">$ ls my_works/</h1>
+  <app-projectcard-component>
+    *ngFor="let project of projects"
+    [title]="project.title" 
+    [description]="project.description">
+  </app-projectcard-component>
+</section> -->
+
+<section>
+  <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">$ ls my_works/</h1>
+
+  <!-- Use *ngFor on the component tag -->
+  <app-projectcard-component
+    *ngFor="let project of projects"
+    [title]="project.title"
+    [description]="project.description">
+  </app-projectcard-component>
+</section>
