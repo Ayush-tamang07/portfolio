@@ -7,10 +7,12 @@ import { SkillsComponent } from './component/skills-component/skills-component';
 import { ProjectsComponent } from './component/projects-component/projects-component';
 import { ExperienceComponent } from './component/experience-component/experience-component';
 import { EducationComponent } from './component/education-component/education-component';
+import { ContactComponent } from './component/contact-component/contact-component';
+import { FooterComponent } from './component/footer-component/footer-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ExperienceComponent, EducationComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ExperienceComponent, EducationComponent, ContactComponent, FooterComponent],
   template:`
   <app-header-component/>
   <main>
@@ -20,6 +22,8 @@ import { EducationComponent } from './component/education-component/education-co
     <app-projects-component/>
     <app-experience-component/>
     <app-education-component/>
+    <app-contact-component/>
+    <app-footer-component/>
   </main>
   <router-outlet>`,
   // templateUrl: './app.html',
