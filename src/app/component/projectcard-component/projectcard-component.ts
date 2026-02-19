@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core';
 export class ProjectcardComponent {
   @Input() title!: string;
   @Input() description!: string;
+  @Input() image!: string;
+  @Input() github!: string;
+  @Input() livedemo? : string
+  @Input() icons!: string
 }

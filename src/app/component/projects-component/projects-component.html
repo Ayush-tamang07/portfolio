@@ -1,6 +1,6 @@
 <!-- <section> -->
-  <!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">ayush@root:~$ ls works/</h1> -->
-  <!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">$ ls my_works/</h1>
+<!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">ayush@root:~$ ls works/</h1> -->
+<!-- <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">$ ls my_works/</h1>
   <app-projectcard-component>
     *ngFor="let project of projects"
     [title]="project.title" 
@@ -12,9 +12,16 @@
   <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">$ ls my_works/</h1>
 
   <!-- Use *ngFor on the component tag -->
-  <app-projectcard-component
-    *ngFor="let project of projects"
-    [title]="project.title"
-    [description]="project.description">
-  </app-projectcard-component>
+  <!-- <div class="flex justify-evenly"> -->
+  <div class="flex flex-wrap justify-center gap-6">
+    <app-projectcard-component
+      class=""
+      *ngFor="let project of projects"
+      [title]="project.title"
+      [description]="project.description"
+      [image]="project.image"
+      [github]="project.github"
+    >
+    </app-projectcard-component>
+  </div>
 </section>

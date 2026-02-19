@@ -5,10 +5,11 @@ import { HeroComponent } from "./component/hero-component/hero-component";
 import { AboutmeComponent } from './component/aboutme-component/aboutme-component';
 import { SkillsComponent } from './component/skills-component/skills-component';
 import { ProjectsComponent } from './component/projects-component/projects-component';
+import { ExperienceComponent } from './component/experience-component/experience-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ExperienceComponent],
   template:`
   <app-header-component/>
   <main>
@@ -16,6 +17,7 @@ import { ProjectsComponent } from './component/projects-component/projects-compo
     <app-aboutme-component/>
     <app-skills-component/>
     <app-projects-component/>
+    <app-experience-component/>
   </main>
   <router-outlet>`,
   // templateUrl: './app.html',
