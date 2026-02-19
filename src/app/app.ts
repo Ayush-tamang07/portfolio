@@ -6,10 +6,11 @@ import { AboutmeComponent } from './component/aboutme-component/aboutme-componen
 import { SkillsComponent } from './component/skills-component/skills-component';
 import { ProjectsComponent } from './component/projects-component/projects-component';
 import { ExperienceComponent } from './component/experience-component/experience-component';
+import { EducationComponent } from './component/education-component/education-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ExperienceComponent],
+  imports: [RouterOutlet, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, ProjectsComponent, ExperienceComponent, EducationComponent],
   template:`
   <app-header-component/>
   <main>
@@ -18,6 +19,7 @@ import { ExperienceComponent } from './component/experience-component/experience
     <app-skills-component/>
     <app-projects-component/>
     <app-experience-component/>
+    <app-education-component/>
   </main>
   <router-outlet>`,
   // templateUrl: './app.html',
