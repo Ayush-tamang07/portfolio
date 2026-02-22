@@ -31,7 +31,7 @@ export class ProjectsComponent {
     {
       title: 'MyFinanceHub',
       description:
-      'MyFinanceHub is a finance ',
+      'MyFinanceHub is a finance',
       image:
         'https://cdn.dribbble.com/userupload/4299008/file/original-9939187c75d8b604f733e669b8a9bf1b.png?format=webp&resize=400x300&vertical=center',
       github: 'https://github.com/Ayush-tamang07/MyFinanceHub.git',
