@@ -36,5 +36,14 @@ export class ProjectsComponent {
         'https://cdn.dribbble.com/userupload/4299008/file/original-9939187c75d8b604f733e669b8a9bf1b.png?format=webp&resize=400x300&vertical=center',
       github: 'https://github.com/Ayush-tamang07/MyFinanceHub.git',
     },
+    {
+      title: 'Rivo',
+      description:
+      'A practice project built with React and Tailwind CSS to strengthen frontend development skills by creating interactive components and layouts.',
+      image:
+        'https://cdn.dribbble.com/userupload/4299008/file/original-9939187c75d8b604f733e669b8a9bf1b.png?format=webp&resize=400x300&vertical=center',
+      github: 'https://github.com/Ayush-tamang07/rivo.git',
+      livedemo:'https://rivo-tau.vercel.app/'
+    },
   ];
 }

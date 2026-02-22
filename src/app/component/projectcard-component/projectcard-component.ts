@@ -12,6 +12,12 @@ export class ProjectcardComponent {
   @Input() description!: string;
   @Input() image!: string;
   @Input() github!: string;
-  @Input() livedemo? : string
-  @Input() icons!: string
+  @Input() livedemo?: string;
+  @Input() icons!: string;
+
+  openLiveDemo() {
+    if (this.livedemo) {
+      window.open(this.livedemo, '_blank');
+    }
+  }
 }

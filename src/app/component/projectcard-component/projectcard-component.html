@@ -10,15 +10,23 @@
   </div>
 
   <!-- Description -->
-  <div class="p-4"> 
+  <div class="p-4">
     <p class="text-gray-700 text-sm text-left">
-      {{ description }} 
+      {{ description }}
     </p>
   </div>
 
   <div class="flex justify-end gap-2 px-2 py-2">
-    <button class="bg-[#a871f1] rounded-lg px-3 py-2 cursor-not-allowed">Live Demo</button>
-    <!-- <button class="bg-[#a871f1] rounded-lg px-3 py-2 cursor-pointer" value="{{github}}">Github</button> -->
+    <button
+      class="bg-[#a871f1] rounded-lg px-3 py-2"
+      [disabled]="!livedemo"
+      [class.cursor-not-allowed]="!livedemo"
+      [class.opacity-50]="!livedemo"
+      (click)="openLiveDemo()"
+    >
+      Live Demo
+    </button>
+    <!-- [href]="livedemo"  -->
     <a
       [href]="github"
       target="_blank"
